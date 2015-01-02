@@ -2485,3 +2485,45 @@ Started GET "/assets/application-9d71a2f6dda6b569ca80f60714aabe8b.js?body=1" for
   [1m[35m (0.1ms)[0m  rollback transaction
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT `tweets`.* FROM `tweets`[0m
+  Rendered tweets/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds-a311ade40198d36c0ab58e05ae8386b6.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/application-c0b5b1132bdb8d87e6754bc7c9f41db8.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/tweets-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/tweets-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+
+
+Started GET "/assets/application-9d71a2f6dda6b569ca80f60714aabe8b.js?body=1" for 127.0.0.1 at 2015-01-02 16:34:56 +0530
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2015-01-02 16:45:05 +0530
+Processing by TweetsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered tweets/_form.html.erb (71.1ms)
+  Rendered tweets/new.html.erb within layouts/application (795.0ms)
+Completed 200 OK in 865ms (Views: 862.6ms | ActiveRecord: 0.1ms)
